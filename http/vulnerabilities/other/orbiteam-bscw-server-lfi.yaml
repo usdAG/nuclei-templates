@@ -14,7 +14,7 @@ info:
     cwe-id: CWE-22
   metadata:
     max-request: 1
-  tags: bscw,orbiteam,lfi,unauth,packetstorm
+  tags: bscw,orbiteam,lfi,unauth,packetstorm,xss
 
 http:
   - method: GET
@@ -30,5 +30,4 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 490a00463044022049a949a09aaccddb58136c0e6060a53334c58bd941b3e589d46d00fbe42a1018022009d3bb913558cb68f72d7548589d16127e648c422651484784b77ee9efddf8dc:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100e6319ad605a77bd64cccc51794d12ec8ddc9a0ed182b03c7cce06503e6663317022100c8a176c9b35e8dd016b99b46e5fd32b1af7b7c02ceb61de26e62d00817b4a9fc:922c64590222798bb761d5b6d8e72950

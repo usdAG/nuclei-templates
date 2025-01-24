@@ -4,13 +4,19 @@ info:
   name: Node ecstatic Directory Listing
   author: DhiyaneshDK
   severity: low
+  description: Directiory listing enabled in Node ecstatic.
   reference:
     - https://tripla.dk/2020/03/26/multiple-vulnerabilities-in-nodejs-ecstatic-http-server-http-party/
+  classification:
+    cpe: cpe:2.3:a:ecstatic_project:ecstatic:*:*:*:*:node.js:*:*:*
   metadata:
     verified: true
-    shodan-query: 'server: "ecstatic"'
     max-request: 1
+    shodan-query: 'server: "ecstatic"'
+    product: ecstatic
+    vendor: ecstatic_project
   tags: node,js,listing,ecstatic
+
 
 http:
   - method: GET
@@ -29,4 +35,4 @@ http:
       - type: status
         status:
           - 200
-# digest: 4a0a0047304502204e8bc051e9970da14c591c03d884971fba3126f63bf97b4d2544a1a4295273c10221008179a507e4101964d8e8bfac95c236f3ceae89b37449ea480eeb7dc461dd1442:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402200734642ad975781c89c227f49e485383ef50e1c890ffd91b7740cbae61717db90220437ed4c0daeba2a948ea3b992fd3fb283d104a1a0295085f1220b6f9dd4ef97c:922c64590222798bb761d5b6d8e72950

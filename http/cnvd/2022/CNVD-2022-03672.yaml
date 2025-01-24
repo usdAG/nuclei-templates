@@ -16,7 +16,7 @@ info:
     cwe-id: CWE-77
   metadata:
     max-request: 2
-  tags: cnvd,cnvd2020,sunflower,rce
+  tags: cnvd,cnvd2022,sunflower,rce
 
 http:
   - raw:
@@ -45,5 +45,4 @@ http:
           - "contains(body_1, 'verify_string')"
           - "contains(body_2, 'Windows IP')"
         condition: and
-
-# digest: 4b0a00483046022100e0b8a978d4631823ced989441ed9dc7f4787e0865117f3774c90e5f27393ad3b022100a2f5705860233f76a0fd9a7a6cb44ff3db36963f9c04f4d8f57b519133f77112:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100928026784cc057eaa23f653c4b09ac343accc972b221a64b816b0ce9310edb8802201651e0322b3bf4137ee2d849772b54bcf20351f759b3fe39622fc2c8733f5e10:922c64590222798bb761d5b6d8e72950

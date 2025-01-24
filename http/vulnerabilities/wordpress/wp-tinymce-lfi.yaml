@@ -14,7 +14,7 @@ info:
     cwe-id: CWE-22
   metadata:
     max-request: 1
-  tags: wordpress,wp-theme,lfi,wordpress,tinymce
+  tags: wpscan,wordpress,wp-theme,lfi,tinymce
 
 http:
   - method: GET
@@ -33,5 +33,4 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 4a0a0047304502201c2ac9d65b16487b71e4b7c4d880163c783f630561a93ead417b304fd9279cff022100ebb86be060b482ba4fadce96e5cfa137576edf89c454435a38bd7bc0680dca32:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100cf04fe6789650b57f1b71928d2777257a5c0dea5c97f614d917aeb0a060e4b8102200c01695e1b5c0a304d39d0dc1d98398fa7c6d7cd939c840aa686e61f2e00eb3e:922c64590222798bb761d5b6d8e72950

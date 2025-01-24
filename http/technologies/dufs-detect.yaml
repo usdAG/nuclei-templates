@@ -1,0 +1,36 @@
+id: dufs-detect
+
+info:
+  name: DUFS - Detect
+  author: righettod
+  severity: info
+  description: |
+    DUFS software was detected.
+  reference:
+    - https://github.com/sigoden/dufs
+  metadata:
+    verified: true
+    max-request: 1
+    shodan-query: http.html:"Dufs"
+  tags: tech,dufs,detect
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    host-redirects: true
+    matchers:
+      - type: dsl
+        dsl:
+          - 'status_code == 200'
+          - 'contains_all(to_lower(body), "__dufs_v", "allow_upload")'
+        condition: and
+
+    extractors:
+      - type: regex
+        part: body
+        group: 1
+        regex:
+          - '(?i)__dufs_v([0-9.]+)_'
+# digest: 4a0a0047304502201340c7b71d7b366b4eaa65e874cd597667bf2bd11a727df1bd2d33c9d663fd90022100f199f8ac5b0c20dc38b3af916def473dbe5d95574769aee6fb0c7cf42fdc4438:922c64590222798bb761d5b6d8e72950

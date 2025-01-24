@@ -4,6 +4,7 @@ info:
   name: Businesso Installer Exposure
   author: ritikchaddha
   severity: high
+  description: Businesso is susceptible to the Installation page exposure due to misconfiguration.
   metadata:
     verified: true
     max-request: 1
@@ -28,4 +29,4 @@ http:
       - type: status
         status:
           - 200
-# digest: 4a0a004730450221009184193b2c0350106f74de808452131c2871dda194271c0f51155ada059d074a02206eb9b9f078078d13a691e87c4b4ddf2a305496216d0c7bc2d69691b86265ba0e:922c64590222798bb761d5b6d8e72950
+# digest: 490a004630440220394bb6d54873e218b4cbd2655088a6ebc17db2a2d0a32c1f5e2f7a7201426942022020893b3c290e7099cae8289ddc3ed26036efffb5aeb6e5202b2a49f35cc35949:922c64590222798bb761d5b6d8e72950

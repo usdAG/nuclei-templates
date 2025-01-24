@@ -1,12 +1,12 @@
-|    TAG    | COUNT |    AUTHOR    | COUNT |     DIRECTORY     | COUNT | SEVERITY | COUNT | TYPE | COUNT |
-|-----------|-------|--------------|-------|-------------------|-------|----------|-------|------|-------|
-| cve       |  2271 | dhiyaneshdk  |  1109 | http              |  6856 | info     |  3326 | file |   312 |
-| panel     |  1034 | dwisiswant0  |   800 | file              |   312 | high     |  1439 | dns  |    18 |
-| wordpress |   929 | daffainfo    |   787 | workflows         |   191 | medium   |  1429 |      |       |
-| xss       |   845 | pikpikcu     |   353 | network           |   133 | critical |   906 |      |       |
-| exposure  |   833 | pussycat0x   |   307 | ssl               |    27 | low      |   245 |      |       |
-| wp-plugin |   811 | ritikchaddha |   293 | javascript        |    20 | unknown  |    32 |      |       |
-| osint     |   675 | pdteam       |   283 | dns               |    17 |          |       |      |       |
-| tech      |   645 | ricardomaia  |   229 | headless          |    10 |          |       |      |       |
-| lfi       |   614 | geeknik      |   221 | code              |     2 |          |       |      |       |
-| edb       |   598 | theamanrawat |   221 | contributors.json |     1 |          |       |      |       |
+|    TAG    | COUNT |    AUTHOR     | COUNT | DIRECTORY  | COUNT | SEVERITY | COUNT | TYPE | COUNT |
+|-----------|-------|---------------|-------|------------|-------|----------|-------|------|-------|
+| cve       |  2928 | dhiyaneshdk   |  1573 | http       |  8348 | info     |  3996 | file |   404 |
+| panel     |  1256 | daffainfo     |   866 | cloud      |   419 | high     |  2215 | dns  |    25 |
+| wordpress |  1094 | dwisiswant0   |   803 | file       |   404 | medium   |  1883 |      |       |
+| exposure  |  1050 | princechaddha |   570 | workflows  |   192 | critical |  1226 |      |       |
+| xss       |   997 | ritikchaddha  |   528 | code       |   160 | low      |   291 |      |       |
+| wp-plugin |   957 | pussycat0x    |   452 | network    |   140 | unknown  |    43 |      |       |
+| osint     |   807 | pikpikcu      |   352 | javascript |    66 |          |       |      |       |
+| tech      |   753 | pdteam        |   302 | dast       |    40 |          |       |      |       |
+| lfi       |   740 | ricardomaia   |   247 | ssl        |    36 |          |       |      |       |
+| misconfig |   723 | geeknik       |   234 | dns        |    22 |          |       |      |       |

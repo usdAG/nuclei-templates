@@ -1,0 +1,35 @@
+id: vlc-media-phish
+
+info:
+  name: vlc media phishing Detection
+  author: rxerium
+  severity: info
+  description: |
+    A vlc media phishing website was detected
+  reference:
+    - https://www.videolan.org
+  metadata:
+    max-request: 1
+  tags: phishing,vlc-media,osint
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    host-redirects: true
+    max-redirects: 2
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'VLC: Official site - Free multimedia solutions for all OS! - VideoLAN'
+
+      - type: status
+        status:
+          - 200
+
+      - type: dsl
+        dsl:
+          - '!contains(host,"videolan.org")'
+# digest: 4a0a004730450220258a3a7eff7a2e436293e3db6978a42258215f03c022e91c758c2613be6bc0c9022100a924b45a8a3f687a917e064c80806c90995a6fde51805da5aa8ed1510d711a0a:922c64590222798bb761d5b6d8e72950

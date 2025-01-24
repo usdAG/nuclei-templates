@@ -31,9 +31,9 @@ http:
           - "application/json"
           - "text/html"
         negative: true
-        condition: and
+        condition: or
 
       - type: status
         status:
           - 200
-# digest: 4a0a0047304502206abef1a1342ed4ab08fcfbb9c34c53c88f0abc626af5495fd68a050470770d0c02210082ab5d5040444a7252dec78bfd5288a1d6b81d377aaa783f8f280968a55fea7c:922c64590222798bb761d5b6d8e72950
+# digest: 490a004630440220648c840ad3e3655b529310cb55dec25f386ac1263ec1d4574ba3341c4e641d8602200e142f8f1584511ea04d49f523baee10241cd25067be7ffe8b90e8155f8ba379:922c64590222798bb761d5b6d8e72950

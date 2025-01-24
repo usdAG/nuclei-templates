@@ -4,6 +4,7 @@ info:
   name: WordPress Debug Log - Exposure
   author: geraldino2,dwisiswant0,philippedelteil
   severity: low
+  description: Exposed Wordpress debug log.
   metadata:
     max-request: 4
   tags: wp,wordpress,log,exposure
@@ -46,4 +47,4 @@ http:
       - type: dsl
         dsl:
           - to_string(content_length)+ " bytes"
-# digest: 4b0a00483046022100a226899060a385a0cf9429ae584932a42417c1709b6d5ac8da6f0e3c89a01864022100ee67b1db931ee4fb7a8ba4210350df90510ab686125f46cd9ebb12d13c13995a:922c64590222798bb761d5b6d8e72950
+# digest: 490a00463044022040efbeedc82d9d94480ea18ce5f1e102cda95fa01dc99e5aedb1d939447c22e702203605546a92c3dd4a5f3f431b90a29661f6546a20a77e81874238de7dc2a0b01d:922c64590222798bb761d5b6d8e72950

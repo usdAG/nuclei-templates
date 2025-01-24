@@ -9,10 +9,18 @@ info:
   reference:
     - https://www.reportico.org/site2/index.php
     - https://github.com/reportico-web/reportico
+  classification:
+    cpe: cpe:2.3:a:reportico:reportico:*:*:*:*:*:*:*:*
   metadata:
     verified: true
     max-request: 2
-    shodan-query: title:"Reportico Administration Page"
+    vendor: reportico
+    product: reportico
+    shodan-query:
+      - title:"Reportico Administration Page"
+      - http.title:"reportico administration page"
+    fofa-query: title="reportico administration page"
+    google-query: intitle:"reportico administration page"
   tags: panel,reportico,login,detect
 
 http:
@@ -33,4 +41,4 @@ http:
       - type: status
         status:
           - 200
-# digest: 4a0a0047304502205cbf096783923be30091bd2281d4ae09c99f1cb1a6715b9cd850c27f2aea2828022100ef7fcfb69f5d91b3854635d9ff654da280dbd9185cab34501b04de8c3cd7aff0:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100d42ad31563bb2f20d5d674e94ce4bb6b3699d0c1aa572113219dd64ac1c98ba102207a55870645334b45d975282c6b88802e0a59b3f4c75b64e76d7e0537c38ef05f:922c64590222798bb761d5b6d8e72950
